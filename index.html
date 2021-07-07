@@ -10,7 +10,12 @@
 
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        <a-scene 
+           embedded 
+           vr-mode-ui="enabled: false" 
+           arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+           renderer="colorManagement: true;"
+        >
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
@@ -25,7 +30,7 @@
                 animation-mixer
                 gltf-model="#cristo"
                 scale="1 1 1"
-                rotation="90 0 0"
+                rotation="-90 0 0"
                 >
             </a-entity>
         </a-marker>
@@ -34,7 +39,7 @@
                 animation-mixer
                 gltf-model="#altar"
                 scale="1 1 1"
-                rotation="90 0 0"
+                rotation="-90 0 0"
                 >
             </a-entity>
         </a-marker>
@@ -43,7 +48,7 @@
                 animation-mixer
                 gltf-model="#fatima"
                 scale="1 1 1"
-                rotation="90 0 0"
+                rotation="-90 0 0"
                 >
             </a-entity>
         </a-marker>
@@ -52,7 +57,7 @@
                 animation-mixer
                 gltf-model="#aparecida"
                 scale="1 1 1"
-                rotation="90 0 0"
+                rotation="-90 0 0"
                 >
             </a-entity>
         </a-marker>
