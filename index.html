@@ -16,40 +16,44 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
             <a-asset-item id="aparecida" src="https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/aparecida.gltf"></a-asset-item>
             <a-asset-item id="cristo" src="https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/jesus.gltf"></a-asset-item>
-            <a-asset-item id="chagas" src="https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/altar.gltf"></a-asset-item>
+            <a-asset-item id="altar" src="https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/altar.gltf"></a-asset-item>
             <a-asset-item id="fatima" src="https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/fatima.gltf"></a-asset-item>
         </a-assets>
-
-        <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
 
         <a-marker id="cristo-marker" type='barcode' value='6'>
             <a-entity
                 animation-mixer
                 gltf-model="#cristo"
-                scale="2 2 2">
+                scale="1 1 1"
+                rotation="90 0 0"
+                >
             </a-entity>
         </a-marker>
-        <a-marker id="chagas-marker" type='barcode' value='12'>
+        <a-marker id="altar-marker" type='barcode' value='12'>
             <a-entity
                 animation-mixer
-                gltf-model="#chagas"
-                scale="2 2 2">
+                gltf-model="#altar"
+                scale="1 1 1"
+                rotation="90 0 0"
+                >
             </a-entity>
         </a-marker>
         <a-marker id="fatima-marker" type='barcode' value='18'>
             <a-entity
                 animation-mixer
                 gltf-model="#fatima"
-                scale="2 2 2">
+                scale="1 1 1"
+                rotation="90 0 0"
+                >
             </a-entity>
         </a-marker>
         <a-marker id="aparecida-marker" type='barcode' value='24'>
             <a-entity
                 animation-mixer
                 gltf-model="#aparecida"
-                scale="2 2 2">
+                scale="1 1 1"
+                rotation="90 0 0"
+                >
             </a-entity>
         </a-marker>
 
