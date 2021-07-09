@@ -35,18 +35,9 @@
                 >
             </a-entity>
             <a-entity 
-            light="type: directional; 
-               color: #FFFFFF; 
-               intensity: 1;
-               castShadow: true;
-               shadowMapHeight: 1024;
-               shadowMapWidth: 1024;
-                shadowCameraLeft: -7;
-                shadowCameraRight: 5;
-                shadowCameraBottom: -5;
-                shadowCameraTop: 5;
-                target: cristoModel;
-               "></a-entity>
+               light="type: point; color: #FFFFFF; intensity: 1;" 
+               position="0 0 -3"
+            ></a-entity>
         </a-marker>
         <a-marker id="altar-marker" type='barcode' value='12'>
             <a-entity
@@ -58,18 +49,9 @@
                 >
             </a-entity>
             <a-entity 
-            light="type: directional; 
-               color: #FFFFFF; 
-               intensity: 1;
-               castShadow: true;
-               shadowMapHeight: 1024;
-               shadowMapWidth: 1024;
-                shadowCameraLeft: -7;
-                shadowCameraRight: 5;
-                shadowCameraBottom: -5;
-                shadowCameraTop: 5;
-                target: altarModel;
-               "></a-entity>
+               light="type: point; color: #FFFFFF; intensity: 1;" 
+               position="0 0 -3"
+            ></a-entity>
 
         </a-marker>
         <a-marker id="fatima-marker" type='barcode' value='18'>
@@ -81,8 +63,9 @@
                 >
             </a-entity>
             <a-entity 
-               light="type: hemisphere; color: #FFFFFF; intensity: 1;" 
-               ></a-entity>
+               light="type: point; color: #FFFFFF; intensity: 1;" 
+               position="0 0 -3"
+            ></a-entity>
 
         </a-marker>
         <a-marker id="aparecida-marker" type='barcode' value='24'>
@@ -95,6 +78,7 @@
             </a-entity>
             <a-entity 
                light="type: point; color: #FFFFFF; intensity: 1;" 
+               position="0 0 -3"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
