@@ -136,6 +136,7 @@
         <a-entity camera></a-entity>
         </a-scene>
         <script>
+            $(document).load(function () {
            function addListeners(){
              $("#cristo-marker").get(0).addEventListener('markerFound', function(ev) {
                  alert("Jesus")
@@ -146,6 +147,10 @@
                  console.log("-----");
              })
            }
+
+           addListeners();
+           alert('teste');
+        })
         </script>
     </body>
 </html>
