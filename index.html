@@ -36,12 +36,13 @@
           id="cristo-marker" 
           type='barcode' 
           value='6'
-          raycaster="objects: .clickable"
           emitevents="true"
           smooth="true"
-          smoothCount="10"
-          smoothTolerance=".01"
-          smoothThreshold="5"
+          smoothCount="2"
+          smoothTolerance=".1"
+          smoothThreshold="1"
+          gesture-handler
+          sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/JESUS-DAS-SANTAS-CHAGAS.mp3); autoplay: true"
           >
             <a-entity
                 id="cristoModel"
@@ -50,7 +51,6 @@
                 rotation="-90 0 0"
                 position="0 0 0"
                 class="clickable"
-                gesture-handler
                 >
             </a-entity>
             <a-entity light="type: point; color: #C0C0C0; intensity: 15;" position="-1 0.3 -2"></a-entity>
