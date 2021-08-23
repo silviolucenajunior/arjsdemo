@@ -41,8 +41,7 @@
           smoothCount="6"
           smoothTolerance=".001"
           smoothThreshold="2"
-          gesture-handler
-          sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/JESUS-DAS-SANTAS-CHAGAS.mp3); autoplay: true"
+          
           >
             <a-entity
                 id="cristoModel"
@@ -51,10 +50,14 @@
                 rotation="-90 0 0"
                 position="0 0 0"
                 class="clickable"
+                gesture-handler
+                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/JESUS-DAS-SANTAS-CHAGAS.mp3); autoplay: true"
                 >
             </a-entity>
-            <a-entity light="type: point; color: #C0C0C0; intensity: 15;" position="-1 0.3 -2"></a-entity>
-            <a-entity light="type: point; color: #C0C0C0; intensity: 5;" position="1 0.3 -2"></a-entity>
+            <a-entity light="type: point; color: #C0C0C0; intensity: 15;" position="-1 0.3 -2"                 gesture-handler
+            ></a-entity>
+            <a-entity light="type: point; color: #C0C0C0; intensity: 5;" position="1 0.3 -2"                 gesture-handler
+            ></a-entity>
         </a-marker>
         <a-marker 
           id="altar-marker"
