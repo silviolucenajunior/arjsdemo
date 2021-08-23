@@ -47,11 +47,11 @@
                 id="cristoModel"
                 gltf-model="#cristo"
                 scale="1.5 1.5 1.5"
-                rotation="-90 0 0"
+                rotation="0 0 0"
                 position="0 0 0"
                 class="clickable"
                 gesture-handler
-                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/JESUS-DAS-SANTAS-CHAGAS.mp3); autoplay: true"
+                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/JESUS-DAS-SANTAS-CHAGAS.mp3); autoplay: false"
                 >
             </a-entity>
             <a-entity light="type: point; color: #C0C0C0; intensity: 15;" position="-1 0.3 -2"                 gesture-handler
@@ -73,11 +73,11 @@
                 id="altarModel"
                 gltf-model="#altar"
                 scale="1.5 1.5 1.5"
-                rotation="-90 0 0"
+                rotation="0 0 0"
                 position="0 0 0"
                 class="clickable"
                 gesture-handler
-                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/altar.mp3); autoplay: true"
+                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/altar.mp3); autoplay: false"
                 >
             </a-entity>
            <a-entity light="type: point; color: #C0C0C0; intensity: 5;" position="-2 1 -2"></a-entity>
@@ -97,11 +97,11 @@
             <a-entity
                 gltf-model="#fatima"
                 scale="1.5 1.5 1.5"
-                rotation="-90 0 0"
+                rotation="0 0 0"
                 position="0 0 0"
                 class="clickable"
                 gesture-handler
-                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/fatima.mp3); autoplay: true"
+                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/fatima.mp3); autoplay: false"
                 >
             </a-entity>
             <a-entity light="type: point; color: #C0C0C0; intensity: 2;" position="-2 2 -1.3"></a-entity>
@@ -121,11 +121,11 @@
             <a-entity
                 gltf-model="#aparecida"
                 scale="1.5 1.5 1.5"
-                rotation="-90 0 0"
+                rotation="0 0 0"
                 position="0 0 0"
                 class="clickable"
                 gesture-handler
-                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/aparecida.mp3); autoplay: true"
+                sound="src: url(https://raw.githubusercontent.com/silviolucenajunior/arjsdemo/master/audios/aparecida.mp3); autoplay: false"
 
                 >
             </a-entity>
@@ -137,6 +137,9 @@
         </a-scene>
         <script>
            function addListeners(){
+             $("#cristo-marker").get(0).addEventListener('markerFound', function(ev) {
+                 alert("Jesus")
+             })
              $('a-marker').on('markerFound', function(ev) {
                  alert(json.stringify(ev));
                  console.alert(json.stringify(this));
