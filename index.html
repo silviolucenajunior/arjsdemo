@@ -19,7 +19,7 @@
         <a-scene 
            embedded 
            vr-mode-ui="enabled: false" 
-           arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+           arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
            renderer="colorManagement: true;"
            gesture-detector
         >
@@ -38,7 +38,11 @@
           value='6'
           raycaster="objects: .clickable"
           emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;">
+          smooth="true"
+          smoothCount="10"
+          smoothTolerance=".01"
+          smoothThreshold="5"
+          >
             <a-entity
                 id="cristoModel"
                 gltf-model="#cristo"
@@ -58,7 +62,10 @@
           value='12'
           raycaster="objects: .clickable"
           emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;">
+          smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5">
             <a-entity
                 id="altarModel"
                 gltf-model="#altar"
@@ -78,7 +85,10 @@
          value='18'
          raycaster="objects: .clickable"
          emitevents="true"
-         cursor="fuse: false; rayOrigin: mouse;"
+         smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
          >
             <a-entity
                 gltf-model="#fatima"
@@ -98,7 +108,10 @@
           value='24'
           raycaster="objects: .clickable"
           emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;"
+          smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
           >
             <a-entity
                 gltf-model="#aparecida"
