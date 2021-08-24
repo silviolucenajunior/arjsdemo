@@ -140,18 +140,17 @@
         <script>
             $(document).ready(function () {
            function addListeners(){
-             $("#cristo-marker").get(0).addEventListener('markerFound', function(ev) {
-                 alert("Jesus")
+             $("a-marker").on('markerFound', function(ev) {
+                var entity = $(this).find('a-entity').get(0)
+                entity.sound.play();
              })
-             $('a-marker').on('markerFound', function(ev) {
-                 alert(json.stringify(ev));
-                 console.alert(json.stringify(this));
-                 console.log("-----");
-             })
+             $('a-marker').on('markerLost', function(ev){
+                var entity = $(this).find('a-entity').get(0)
+                entity.sound.stop();
+             });
            }
 
            addListeners();
-           alert('teste');
         })
         </script>
     </body>
