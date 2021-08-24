@@ -138,17 +138,25 @@
         <a-entity camera></a-entity>
         </a-scene>
         <script>
+            function teste() {
+                var entity = $("#aparecida-marker").find('a-entity').get(0)
+                console.log(entity)
+                entity.components.sound.playSound();
+           }
             $(document).ready(function () {
+                
            function addListeners(){
              $("a-marker").on('markerFound', function(ev) {
                 var entity = $(this).find('a-entity').get(0)
-                entity.sound.play();
+                entity.components.sound.playSound();
              })
              $('a-marker').on('markerLost', function(ev){
                 var entity = $(this).find('a-entity').get(0)
-                entity.sound.stop();
+                entity.components.sound.stopSound();
              });
            }
+
+           
 
            addListeners();
         })
